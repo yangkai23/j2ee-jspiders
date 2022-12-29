@@ -1,0 +1,7 @@
+package controller;
+
+public class DemoController {
+	public DemoController() {
+		System.out.println("Controller Object created!!!");
+	}
+}

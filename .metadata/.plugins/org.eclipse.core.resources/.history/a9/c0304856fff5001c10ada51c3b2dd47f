@@ -1,0 +1,16 @@
+package controller;
+
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.servlet.ModelAndView;
+
+import dto.Demo;
+
+public class DemoController {
+	public DemoController() {
+		System.out.println("Controller Object created!!!");
+	}
+	public ModelAndView display(@ModelAttribute Demo demo) {
+		String message="message is "+demo.getName();
+		return new ModelAndView("success", "Anirudh", message);
+	}
+}
